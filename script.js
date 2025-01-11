@@ -1,13 +1,16 @@
-// Add interactivity here if needed
-// Example: Toggle dark mode
-const toggleDarkMode = () => {
-  document.body.classList.toggle('dark-mode');
-};
+// Add animations to timeline items
+document.addEventListener('DOMContentLoaded', () => {
+  const timelineItems = document.querySelectorAll('.timeline-item');
 
-// Uncomment to enable dark mode toggle
-// document.addEventListener('DOMContentLoaded', () => {
-//   const darkModeButton = document.createElement('button');
-//   darkModeButton.innerText = 'Toggle Dark Mode';
-//   darkModeButton.addEventListener('click', toggleDarkMode);
-//   document.body.prepend(darkModeButton);
-// });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  timelineItems.forEach((item) => {
+    observer.observe(item);
+  });
+});
