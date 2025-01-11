@@ -14,3 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(item);
   });
 });
+
+// Show message when a social icon is clicked
+function showMessage(platform) {
+  alert(`You clicked on the ${platform} icon!`);
+}
