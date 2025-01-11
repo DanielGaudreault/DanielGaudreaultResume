@@ -1,3 +1,4 @@
+/* Existing CSS */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -84,4 +85,47 @@ footer {
   background: #2c3e50;
   color: #fff;
   margin-top: 20px;
+}
+
+/* New CSS for Timeline Enhancements */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #e67e22;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  width: 45%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 55%;
+}
+
+.timeline-item::before {
+  width: 20px;
+  height: 20px;
+  left: -10px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: auto;
+  right: -10px;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
