@@ -1,4 +1,4 @@
-/* Existing CSS */
+/* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -11,12 +11,33 @@ body {
 header {
   background: #2c3e50;
   color: #fff;
-  padding: 20px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e67e22;
 }
 
 .container {
@@ -30,11 +51,13 @@ header h1 {
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
   color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 .skills {
@@ -46,8 +69,9 @@ header h1 {
 .skill {
   background: #e67e22;
   color: #fff;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 5px;
+  font-size: 0.9rem;
 }
 
 .timeline {
@@ -56,38 +80,6 @@ header h1 {
   margin: 0 auto;
 }
 
-.timeline-item {
-  padding: 20px;
-  background: #fff;
-  position: relative;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.timeline-item:last-child {
-  margin-bottom: 0;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -20px;
-  top: 20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #e67e22;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #2c3e50;
-  color: #fff;
-  margin-top: 20px;
-}
-
-/* New CSS for Timeline Enhancements */
 .timeline::before {
   content: '';
   position: absolute;
@@ -100,6 +92,11 @@ footer {
 }
 
 .timeline-item {
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 20px;
   width: 45%;
   opacity: 0;
   transform: translateY(20px);
@@ -115,8 +112,13 @@ footer {
 }
 
 .timeline-item::before {
+  content: '';
+  position: absolute;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
+  background: #e67e22;
+  top: 20px;
   left: -10px;
 }
 
@@ -128,4 +130,12 @@ footer {
 .timeline-item.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: #fff;
+  margin-top: 20px;
 }
