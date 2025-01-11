@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Gaudreault - Interactive Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .section {
+      background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      color: #2c3e50;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #e67e22;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .timeline-item {
+      padding: 20px;
+      background: #fff;
+      position: relative;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 20px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #e67e22;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daniel Gaudreault</h1>
+    <p>514-291-8701 | dan.gaudreault87@gmail.com | 12340 rue Rene-Chopin Apt 6, Montreal, QC H1E7E5</p>
+  </header>
+
+  <div class="container">
+    <!-- About Me -->
+    <section class="section">
+      <h2>About Me</h2>
+      <p>Obtaining a position within your establishment will allow me to utilize and develop personal and professional skills, as well as provide the assistance you seek.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Strong English with a working knowledge of French</div>
+        <div class="skill">Easy communication with customers and co-workers</div>
+        <div class="skill">Great leadership skills and attention to detail</div>
+        <div class="skill">Work comfortably as individual or as team member</div>
+        <div class="skill">Worked with minimal supervision</div>
+        <div class="skill">Working in a high-paced environment</div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Porte et Fenêtre Alumican (2022-2024)</h3>
+          <p>CNC machine operator, Door frame assembly</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Brasserie Bernard (August 2022)</h3>
+          <p>Daily food preparation, Line Cook, Garde Manger</p>
+        </div>
+        <!-- Add more timeline items here -->
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>Glengarry District High School, Alexandria, ON (2005) - Ontario Secondary School Diploma</li>
+        <li>Harvard College, Massachusetts, USA (2024) - Computer Science CS50</li>
+      </ul>
+    </section>
+
+    <!-- References -->
+    <section class="section">
+      <h2>References</h2>
+      <p>References available upon request.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Daniel Gaudreault</p>
+  </footer>
+</body>
+</html>
