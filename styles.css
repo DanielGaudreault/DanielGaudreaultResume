@@ -25,19 +25,51 @@ header p {
   font-size: 1.1rem;
 }
 
-.social-links {
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 15px;
 }
 
-.social-links a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
+.social-icon {
+  color: #2c3e50; /* Default icon color */
+  font-size: 2rem; /* Icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-links a:hover {
-  color: #e67e22;
+.social-icon:hover {
+  color: #e67e22; /* Hover color */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Custom colors for each icon */
+.social-icon.fa-facebook:hover {
+  color: #1877f2; /* Facebook blue */
+}
+
+.social-icon.fa-twitter:hover {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.social-icon.fa-linkedin:hover {
+  color: #0a66c2; /* LinkedIn blue */
+}
+
+.social-icon.fa-github:hover {
+  color: #333; /* GitHub black */
+}
+
+.social-icon.fa-instagram:hover {
+  color: #e4405f; /* Instagram pink */
+}
+
+.social-icon.fa-facebook-messenger:hover {
+  color: #006aff; /* Messenger blue */
+}
+
+.social-icon.fa-discord:hover {
+  color: #5865f2; /* Discord purple */
 }
 
 .container {
