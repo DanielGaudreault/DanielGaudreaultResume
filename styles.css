@@ -33,43 +33,14 @@ header p {
 }
 
 .social-icon {
-  color: #2c3e50; /* Default icon color */
-  font-size: 2rem; /* Icon size */
+  color: #e67e22; /* Orange color */
+  font-size: 3rem; /* Larger icon size */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon:hover {
-  color: #e67e22; /* Hover color */
+  color: #d35400; /* Darker orange on hover */
   transform: scale(1.2); /* Slightly enlarge on hover */
-}
-
-/* Custom colors for each icon */
-.social-icon.fa-facebook:hover {
-  color: #1877f2; /* Facebook blue */
-}
-
-.social-icon.fa-twitter:hover {
-  color: #1da1f2; /* Twitter blue */
-}
-
-.social-icon.fa-linkedin:hover {
-  color: #0a66c2; /* LinkedIn blue */
-}
-
-.social-icon.fa-github:hover {
-  color: #333; /* GitHub black */
-}
-
-.social-icon.fa-instagram:hover {
-  color: #e4405f; /* Instagram pink */
-}
-
-.social-icon.fa-facebook-messenger:hover {
-  color: #006aff; /* Messenger blue */
-}
-
-.social-icon.fa-discord:hover {
-  color: #5865f2; /* Discord purple */
 }
 
 .container {
