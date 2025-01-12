@@ -1,17 +1,27 @@
+# Daniel Gaudreault - Resume Website
+
+Welcome to my **Resume Website**! This project is an interactive and visually appealing online resume that showcases my professional experience, skills, and education. Built with **HTML**, **CSS**, and **JavaScript**, this website is designed to provide a modern and user-friendly experience.
 
 ---
 
-### **How to Use the `README.md`**
-1. Create a new file in your project folder named `README.md`.
-2. Copy and paste the above content into the file.
-3. Save the file.
-4. If you're using GitHub, the `README.md` will automatically display on your repository's homepage.
+## 🚀 Features
+
+- **Interactive Timeline**: A visually appealing timeline to display my work experience.
+- **Skill Tags**: Highlight key skills with colorful tags.
+- **Social Icons**: Links to my social media profiles with hover effects.
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
+- **Animations**: Smooth animations for timeline items and social icons.
 
 ---
 
-### **Customization**
-- Update the **Live Demo** link with your GitHub Pages URL once you host the project.
-- Add or remove sections in the `README.md` as needed.
-- Replace the contact information with your own details.
+## 🛠️ Technologies Used
 
-Let me know if you need further assistance! 😊
+- **HTML**: Structure of the website.
+- **CSS**: Styling and layout.
+- **JavaScript**: Interactivity and animations.
+- **Font Awesome**: Icons for social media links.
+- **GitHub Pages**: Hosting the live version of the website.
+
+---
+
+## 📂 Project Structure
