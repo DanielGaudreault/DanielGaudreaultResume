@@ -2,7 +2,7 @@
 
 Welcome to my **Resume Website**! This project is an interactive and visually appealing online resume that showcases my professional experience, skills, and education. Built with **HTML**, **CSS**, and **JavaScript**, this website is designed to provide a modern and user-friendly experience.
 
-You can visit my portfolio website [here](https://danielgaudreault.github.io/DanielsGaudreaultResume/).
+You can visit my Resume Website [here](https://danielgaudreault.github.io/DanielsGaudreaultResume/).
 ---
 
 ## 🚀 Features
